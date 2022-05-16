@@ -1,7 +1,7 @@
 /* 페이지 초기설정 */
 
 *{
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
@@ -48,6 +48,56 @@ header {
     margin-right: 10px;
 }
 
+.side-menu-list{
+    position: absolute;
+    right: -220px;
+    top:58px;
+    bottom: 0;
+    width: 200px;
+    bottom: 0;
+    font-size: 24px;
+    transition: 0.3s ease-in;
+}
+
+.side-menu-list > a,.side-icons{
+    display: block;
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    color:white;
+    z-index: 10000;
+    height: 30px;
+}
+
+.side-menu-list > a:hover{
+    background-color: grey;
+}
+
+.side-icons >a{
+    padding: 0 10px;
+}
+
+.side-icons > a > i{
+    color: white;
+}
+
+.side-icons > a > i:hover{
+    color: gray;
+}
+
+.side-menu-btn > i {
+    cursor: pointer;
+}
+
+#side-menu {
+    z-index: 1;
+    opacity: 0;
+}
+
+#side-menu:checked ~ .side-menu-list {
+    right: -20px;
+}
+
 main{
     width: 100%;
     height: 800px;
@@ -55,9 +105,9 @@ main{
 }
 
 aside {
-    width: 20%;
+    width: 200px;
     height: 800px;
-    background-color: pink;
+    /* background-color: pink; */
     float: left;
 }
 
@@ -71,20 +121,16 @@ nav > ul > li {
     text-align: center;
 }
 
-section {
-    width: 80%;
-    height: 800px;
-    background-color: skyblue;
-    float: right;
+nav > ul > li:hover {
+    background-color: aliceblue;
+    cursor: pointer;
 }
 
-.hidden-bar{
-    width: 30%;
-    height: 880px;
-    background-color: grey;
-    position:absolute;
-    top: 0;
-    right: -30%;
+section {
+    width: calc(100% - 200px);
+    height: 800px;
+    background-color: #e6e6e6;
+    float: right;
 }
 
 footer{
@@ -123,10 +169,6 @@ footer{
         font-size: 30px;
     }
 
-    main{
-        
-    }
-
     aside{
         display: none;
     }
@@ -152,6 +194,15 @@ footer{
         top: 12px;
         right: 20px;
         font-size: 30px;
+    }
+
+    aside{
+        display: none;
+    }
+
+    section{
+        float: none;
+        width: 100%;
     }
 }
 
