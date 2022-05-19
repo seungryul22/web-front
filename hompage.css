@@ -1,0 +1,274 @@
+/* 페이지 초기설정 */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* 페이지 CSS */
+
+.wrap {
+    width: 100%;
+    overflow: hidden;
+    /* height: 1600px; */
+    /* background-color: #e6e6e6; */
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    position: fixed;
+    border-bottom: 1px solid black;
+    /* background-color: white; */
+}
+
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo :hover {
+    color: burlywood;
+}
+
+.icons{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 24px;
+}
+
+.icons > a > i:hover{
+    color: burlywood;
+}
+
+.mobile-icon{
+    z-index: 10000;
+}
+
+.icons > a > i {
+    margin-right: 10px;
+}
+
+.side-menu-list{
+    position: absolute;
+    right: -220px;
+    top:58px;
+    bottom: 0;
+    width: 200px;
+    height: 900px;
+    bottom: 0;
+    font-size: 24px;
+    transition: 0.3s ease-in;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.side-menu-list > a,.side-icons{
+    display: block;
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    color:white;
+    height: 30px;
+}
+
+.side-menu-list > a:hover{
+    background-color: grey;
+}
+
+.side-icons >a{
+    padding: 0 10px;
+}
+
+.side-icons > a > i{
+    color: white;
+}
+
+.side-icons > a > i:hover{
+    color: gray;
+}
+
+.side-menu-btn > i {
+    cursor: pointer;
+}
+
+#side-menu {
+    z-index: 1;
+    opacity: 0;
+}
+
+#side-menu:checked ~ .side-menu-list {
+    right: -20px;
+}
+
+.bcc-img {
+    width: 100%;
+    height: 600px;
+    background-image: url("coffee.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+main{
+    margin: 0 auto;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    z-index: 100;
+}
+
+aside {
+    width: 380px;
+    /* background-color: pink; */
+    float: left;
+    text-align: justify;
+}
+
+nav > ul {
+    margin-top: 100px;
+    padding: 10px;
+}
+
+nav > ul > li {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav > ul > li:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+section {
+    width: calc(100% - 400px);
+    /* background-color: #e6e6e6; */
+    float: right;
+    text-align: justify;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    /* background-color: #e6e6e6; */
+    overflow: hidden;
+    border-top: 1px solid grey;
+}
+
+.made-by{
+    float: right;
+    padding: 16px 10px;
+}
+
+.made-by > span,
+.made-by > a >i {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.made-by > a > i:hover{
+    color: purple;
+}
+
+/* @media */
+
+/* 모바일 */
+@media screen and (max-width:520px) {
+    header {
+        background-color: white;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .mobile-icon{
+        position: absolute;
+        top: 12px;
+        right: 20px;
+        font-size: 30px;
+    }
+
+   .side-menu-btn > i:hover{
+        color: burlywood;
+   }
+
+   main{
+       width: 100%;
+   }
+
+    aside{
+        display: none;
+    }
+
+    section{
+        float: none;
+        width: 100%;
+    }
+
+
+    .bcc-img{
+       background-image: none;
+       background-image: url("coffee-mobile.jpg");
+       background-size: 100% 250px;
+       height: 250px;
+    }
+    
+}
+
+/* 태블릿 */
+@media screen and (min-width:521px) and (max-width:1000px) {
+    header {
+        background-color: white;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .mobile-icon{
+        position: absolute;
+        top: 12px;
+        right: 20px;
+        font-size: 30px;
+    }
+
+    main{
+        width: 90%;
+    }
+
+    aside{
+        /* float: none; */
+        display: none;
+        /* width: 100%; */
+    }
+
+    section{
+        /* float: left; */
+        width: 100%;
+    }
+
+    .bcc-img{
+        background-size: 1000px 600px;
+    }
+}
+
+/* pc */
+@media screen and (min-width:1001px){
+    header {
+        background-color: white;
+    }
+
+    .mobile-icon{
+        display: none;
+    }
+}
