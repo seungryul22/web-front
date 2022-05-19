@@ -12,6 +12,7 @@
 
 /* 페이지 CSS */
 
+/* 페이지 감싸는 wrap */
 .wrap {
     width: 100%;
     overflow: hidden;
@@ -19,6 +20,7 @@
     /* background-color: #e6e6e6; */
 }
 
+/* 헤더 */
 header {
     width: 100%;
     height: 70px;
@@ -47,16 +49,17 @@ header {
     font-size: 24px;
 }
 
+.icons > a > i {
+    margin-right: 10px;
+}
+
 .icons > a > i:hover{
     color: burlywood;
 }
 
+/* 모바일, 태블릿 전용 헤더 */
 .mobile-icon{
     z-index: 10000;
-}
-
-.icons > a > i {
-    margin-right: 10px;
 }
 
 .side-menu-list{
@@ -72,7 +75,7 @@ header {
     background-color: rgba(0, 0, 0, 0.85);
 }
 
-.side-menu-list > a,.side-icons{
+.side-menu-list > a,.side-icons {
     display: block;
     text-align: center;
     padding: 40px 0;
@@ -81,19 +84,19 @@ header {
     height: 30px;
 }
 
-.side-menu-list > a:hover{
+.side-menu-list > a:hover {
     background-color: grey;
 }
 
-.side-icons >a{
+.side-icons > a {
     padding: 0 10px;
 }
 
-.side-icons > a > i{
+.side-icons > a > i {
     color: white;
 }
 
-.side-icons > a > i:hover{
+.side-icons > a > i:hover {
     color: gray;
 }
 
@@ -101,6 +104,7 @@ header {
     cursor: pointer;
 }
 
+/* 체크리스트 이용해서 사이드 메뉴 만들기, 사이드 메뉴 숨기기 */
 #side-menu {
     z-index: 1;
     opacity: 0;
@@ -110,6 +114,7 @@ header {
     right: -20px;
 }
 
+/* 헤더 밑 이미지 */
 .bcc-img {
     width: 100%;
     height: 600px;
@@ -118,6 +123,7 @@ header {
     background-repeat: no-repeat;
 }
 
+/* aisde section 감싸는 메인 시작 */
 main{
     margin: 0 auto;
     width: 80%;
@@ -126,6 +132,7 @@ main{
     z-index: 100;
 }
 
+/* aside(왼쪽) */
 aside {
     width: 380px;
     /* background-color: pink; */
@@ -133,22 +140,7 @@ aside {
     text-align: justify;
 }
 
-nav > ul {
-    margin-top: 100px;
-    padding: 10px;
-}
-
-nav > ul > li {
-    border-bottom: 1px solid black;
-    padding: 10px;
-    text-align: center;
-}
-
-nav > ul > li:hover {
-    background-color: aliceblue;
-    cursor: pointer;
-}
-
+/* section(오른쪽) ,모바일+태블릿에서 메인 */
 section {
     width: calc(100% - 400px);
     /* background-color: #e6e6e6; */
@@ -156,6 +148,7 @@ section {
     text-align: justify;
 }
 
+/* 푸터 */
 footer{
     width: 100%;
     height: 100px;
@@ -179,7 +172,7 @@ footer{
     color: purple;
 }
 
-/* @media */
+/* 미디어쿼리 반응형웹 시작 */
 
 /* 모바일 */
 @media screen and (max-width:520px) {
@@ -202,6 +195,13 @@ footer{
         color: burlywood;
    }
 
+   .bcc-img{
+    background-image: none;
+    background-image: url("coffee-mobile.jpg");
+    background-size: 100% 250px;
+    height: 250px;
+ }
+
    main{
        width: 100%;
    }
@@ -214,15 +214,6 @@ footer{
         float: none;
         width: 100%;
     }
-
-
-    .bcc-img{
-       background-image: none;
-       background-image: url("coffee-mobile.jpg");
-       background-size: 100% 250px;
-       height: 250px;
-    }
-    
 }
 
 /* 태블릿 */
@@ -242,6 +233,10 @@ footer{
         font-size: 30px;
     }
 
+    .bcc-img{
+        background-size: 1000px 600px;
+    }
+
     main{
         width: 90%;
     }
@@ -255,10 +250,6 @@ footer{
     section{
         /* float: left; */
         width: 100%;
-    }
-
-    .bcc-img{
-        background-size: 1000px 600px;
     }
 }
 

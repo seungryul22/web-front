@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- 메타태그 모음 -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+
+    <!-- 구글 노토샌즈 무료폰트 사용 -->
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS 사용 -->
     <link rel="stylesheet" href="hompage.css" media="screen" />
-    <title>제작중</title>
+
+    <!-- JavaScript 사용 -->
     <script src="app.js"></script>
+
+    <!-- 페이지 제목 -->
+    <title>아직 제작중</title>
   </head>
   <body>
+    <!-- 페이지 전체 감싸는 틀 제작 wrap -->
     <div class="wrap">
+      <!-- 헤더 -->
       <header>
         <div class="logo"><a href="#">Main LOGO</a></div>
         <div class="icons">
@@ -24,6 +35,7 @@
           <a href="#"><i class="fa-solid fa-moon"></i></a>
           <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
+        <!-- 모바일,태블릿 전용 아이콘, 네비 -->
         <div class="mobile-icon">
           <input type="checkbox" id="side-menu" />
           <label for="side-menu" class="side-menu-btn"
@@ -42,25 +54,14 @@
             </div>
           </div>
         </div>
-        <div class="hidden-bar"></div>
       </header>
+      <!-- 헤더 바로 밑 이미지 -->
       <div class="bcc-img"></div>
+      <!-- aside랑 section 감싸는 main -->
       <main>
+        <!-- 왼쪽 aside, 모바일+태블릿에서 없어질 예정 -->
         <aside>
-          <!-- <nav>
-            <ul>
-              <li><a href="#">data</a></li>
-              <li><a href="#">data</a></li>
-              <li><a href="#">data</a></li>
-              <li><a href="#">data</a></li>
-              <li><a href="#">data</a></li>
-              <li><a href="#">data</a></li>
-              <li><a href="#">data</a></li>
-              <li><a href="#">data</a></li>
-              <li><a href="#">data</a></li>
-              <li><a href="#">data</a></li>
-            </ul>
-          </nav> -->
+          <!-- <nav></nav> -->
           <p>
             <mark>aside</mark> Lorem ipsum dolor sit, amet consectetur
             adipisicing elit. Rerum laboriosam eligendi earum nulla nemo ad
@@ -107,6 +108,7 @@
             quo delectus, rem sed placeat assumenda! Aut.
           </p>
         </aside>
+        <!-- 오른쪽 section -->
         <section>
           <p>
             <mark>section</mark> Lorem ipsum dolor sit amet consectetur
@@ -208,6 +210,7 @@
           </p>
         </section>
       </main>
+      <!-- 푸터 -->
       <footer>
         <div class="made-by">
           <span>by_seungryul &nbsp;_</span>
@@ -215,6 +218,7 @@
         </div>
       </footer>
     </div>
+    <!-- 무료아이콘을 위한 Script코드 -->
     <script
       src="https://kit.fontawesome.com/18d9faa058.js"
       crossorigin="anonymous"
