@@ -31,9 +31,39 @@
       <header>
         <div class="logo"><a href="#">Main LOGO</a></div>
         <div class="icons">
-          <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+          <input type="checkbox" id="info" />
+          <label for="info" class="info-btn">
+            <i class="fa-solid fa-circle-info"></i>
+          </label>
+          <div class="popup">
+            <p><mark>Page info, 가이드</mark></p>
+
+            <br />
+
+            <ul>
+              <li>다크모드 <b>가능</b></li>
+              <li>검색 사용 <b>불가능</b></li>
+              <li>배경음악 조절 <b>가능</b></li>
+              <br /><br />
+              <li>
+                팝업 닫기 : 다시 <i class="fa-solid fa-circle-info"></i> 클릭
+                <br />
+                음악창 닫기 : 다시 <i class="fa-solid fa-music"></i> 클릭
+              </li>
+            </ul>
+          </div>
+
+          <input type="checkbox" id="music" />
+          <label for="music" class="music-btn"
+            ><i class="fa-solid fa-music"></i
+          ></label>
+          <div class="music-mp3">
+            <audio src="coffee-audio.mp3" controls="controls"></audio>
+          </div>
           <a href="#"><i class="fa-solid fa-moon"></i></a>
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#" onclick="alert('사용불가');"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
         </div>
         <!-- 모바일,태블릿 전용 아이콘, 네비 -->
         <div class="mobile-icon">
@@ -48,7 +78,35 @@
             <a href="#">data</a>
             <a href="#">data</a>
             <div class="side-icons">
-              <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+              <input type="checkbox" id="info-m" />
+              <label for="info-m" class="info-m-btn">
+                <i class="fa-solid fa-circle-info"></i>
+              </label>
+              <div class="popup-m">
+                <p><mark>Page info, 가이드</mark></p>
+
+                <br />
+
+                <ul>
+                  <li>다크모드 <b>가능</b></li>
+                  <li>검색 사용 <b>불가능</b></li>
+                  <li>배경음악 조절 <b>가능</b></li>
+                  <br /><br />
+                  <li>
+                    팝업 닫기 : 다시 <i class="fa-solid fa-circle-info"></i>
+                    클릭
+                    <br />
+                    음악창 닫기 : 다시 <i class="fa-solid fa-music"></i> 클릭
+                  </li>
+                </ul>
+              </div>
+              <input type="checkbox" id="music-m" />
+              <label for="music-m" class="music-m-btn"
+                ><i class="fa-solid fa-music"></i
+              ></label>
+              <div class="music-m-mp3">
+                <audio src="coffee-audio.mp3" controls="controls"></audio>
+              </div>
               <a href="#"><i class="fa-solid fa-moon"></i></a>
               <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
@@ -218,7 +276,7 @@
         </div>
       </footer>
     </div>
-    <!-- 무료아이콘을 위한 Script코드 -->
+    <!-- 폰트 어썸 무료아이콘을 위한 Script코드 -->
     <script
       src="https://kit.fontawesome.com/18d9faa058.js"
       crossorigin="anonymous"

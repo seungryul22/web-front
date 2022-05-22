@@ -57,6 +57,63 @@ header {
     color: burlywood;
 }
 
+.icons > #info {
+    display: none;
+}
+
+.info-btn {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.info-btn > i:hover{
+    color: burlywood;
+}
+
+.popup {
+    width: 200px;
+    position: absolute;
+    top: 150%;
+    right: 200%;
+    background-color: white;
+    border: 1px solid grey;
+    color: black;
+    text-align: center;
+    display: none;
+    z-index: 9000;
+    font-size: 16px;
+}
+
+#info:checked ~ .popup{
+    display: block;
+}
+
+#music {
+    display: none;
+}
+
+.music-btn{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.music-btn >i:hover{
+    color: burlywood;
+}
+
+.music-mp3 {
+    display: none;
+    position: absolute;
+    top: 150%;
+    right: 10%;
+}
+
+#music:checked ~ .music-mp3{
+    display: block;
+    opacity: 0.3;
+    z-index: 9999;
+}
+
 /* 모바일, 태블릿 전용 헤더 */
 .mobile-icon{
     z-index: 10000;
@@ -89,7 +146,7 @@ header {
 }
 
 .side-icons > a {
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .side-icons > a > i {
@@ -104,10 +161,68 @@ header {
     cursor: pointer;
 }
 
+.side-icons > #info-m{
+    display: none;
+}
+
+.info-m-btn > i {
+    margin-right: 10px;
+    color: white;
+}
+
+.info-m-btn > i:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.popup-m {
+    width: 180px;
+    position: absolute;
+    top: 0%;
+    right: 120%;
+    background-color: #e6e6e6;
+    text-align: center;
+    display: none;
+    z-index: 10001;
+    font-size: 16px;
+}
+
+#info-m:checked ~ .popup-m{
+    display: block;
+}
+
+#music-m {
+    display: none;
+}
+
+.music-m-btn{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.music-m-btn > i{
+    color: white;
+}
+
+.music-m-btn >i:hover{
+    color: grey;
+}
+
+.music-m-mp3 {
+    display: none;
+    position: absolute;
+    top: 25%;
+    right: 100%;
+}
+
+#music-m:checked ~ .music-m-mp3{
+    display: block;
+    z-index: 9999;
+}
+
 /* 체크리스트 이용해서 사이드 메뉴 만들기, 사이드 메뉴 숨기기 */
 #side-menu {
-    z-index: 1;
-    opacity: 0;
+    display: none;
 }
 
 #side-menu:checked ~ .side-menu-list {
@@ -115,13 +230,12 @@ header {
 }
 
 /* 헤더 밑 이미지 */
-.bcc-img {
-    width: 100%;
-    height: 600px;
+.bcc-img{
     background-image: url("coffee.jpg");
-    background-size:100% 100%;
     background-repeat: no-repeat;
-}
+    background-size: 100% 650px;
+    height: 650px;
+ }
 
 /* aisde section 감싸는 메인 시작 */
 main{
@@ -197,7 +311,7 @@ footer{
 
    .bcc-img{
     background-image: none;
-    background-image: url("coffee-mobile.jpg");
+    background-image: url("coffee.jpg");
     background-size: 100% 250px;
     height: 250px;
  }
@@ -233,9 +347,16 @@ footer{
         font-size: 30px;
     }
 
+    .side-menu-btn > i:hover{
+        color: burlywood;
+   }
+
     .bcc-img{
-        background-size: 1000px 600px;
-    }
+        background-image: url("coffee.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 400px;
+        height: 400px;
+     }
 
     main{
         width: 90%;
