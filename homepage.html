@@ -16,32 +16,33 @@
     />
 
     <!-- CSS 사용 -->
-    <link rel="stylesheet" href="hompage.css" media="screen" />
+    <link rel="stylesheet" href="homepage.css" media="screen" />
 
     <!-- JavaScript 사용 -->
     <script src="app.js"></script>
 
     <!-- 페이지 제목 -->
-    <title>아직 제작중</title>
+    <title>201912034</title>
   </head>
   <body>
     <!-- 페이지 전체 감싸는 틀 제작 wrap -->
     <div class="wrap">
-      <!-- 헤더 -->
+      <!-- 헤더 시작 -->
       <header>
-        <div class="logo"><a href="#">Main LOGO</a></div>
+        <!-- 로고 -->
+        <div class="logo"><a href="#">Furry Friends</a></div>
+        <!-- 네비게이션 아이콘 모음 -->
         <div class="icons">
+          <!-- 페이지 가이드 팝업 버튼 -->
           <input type="checkbox" id="info" />
           <label for="info" class="info-btn">
             <i class="fa-solid fa-circle-info"></i>
           </label>
+          <!-- 페이지 가이드 팝업창 -->
           <div class="popup">
             <p><mark>Page info, 가이드</mark></p>
-
             <br />
-
             <ul>
-              <li>다크모드 <b>가능</b></li>
               <li>검색 사용 <b>불가능</b></li>
               <li>배경음악 조절 <b>가능</b></li>
               <br /><br />
@@ -52,41 +53,62 @@
               </li>
             </ul>
           </div>
-
+          <!-- 음악 컨트롤러 버튼 -->
           <input type="checkbox" id="music" />
           <label for="music" class="music-btn"
             ><i class="fa-solid fa-music"></i
           ></label>
+          <!-- 음악 컨트롤러 팝업창 -->
           <div class="music-mp3">
             <audio src="coffee-audio.mp3" controls="controls"></audio>
           </div>
-          <a href="#"><i class="fa-solid fa-moon"></i></a>
-          <a href="#" onclick="alert('사용불가');"
-            ><i class="fa-solid fa-magnifying-glass"></i
-          ></a>
+          <!-- 다크모드 버튼 -->
+          <!-- <i class="fa-solid fa-moon" onclick="night();"></i> -->
+          <!-- 검색 버튼 -->
+          <i
+            onclick="alert('사용불가능')"
+            class="fa-solid fa-magnifying-glass"
+          ></i>
         </div>
         <!-- 모바일,태블릿 전용 아이콘, 네비 -->
         <div class="mobile-icon">
+          <!-- 모바일 전용 네비 불러오는 햄버거 버튼 -->
           <input type="checkbox" id="side-menu" />
           <label for="side-menu" class="side-menu-btn"
             ><i class="fa-solid fa-bars"></i
           ></label>
+          <!-- 모바일 전용 사이드 네비 -->
           <div class="side-menu-list">
-            <a href="#">data</a>
-            <a href="#">data</a>
-            <a href="#">data</a>
-            <a href="#">data</a>
-            <a href="#">data</a>
+            <a href="#"
+              ><img src="pome.jpg" alt="포메라니안" /><span
+                ># 포메라니안</span
+              ></a
+            >
+            <a href="#"
+              ><img src="pome.jpg" alt="포메라니안" /><span
+                ># 포메라니안</span
+              ></a
+            >
+            <a href="#"
+              ><img src="pome.jpg" alt="포메라니안" /><span
+                ># 포메라니안</span
+              ></a
+            >
+            <a href="#"
+              ><img src="pome.jpg" alt="포메라니안" /><span
+                ># 포메라니안</span
+              ></a
+            >
+            <!-- 사이드 네비에 있는 원래 버튼들 -->
             <div class="side-icons">
               <input type="checkbox" id="info-m" />
               <label for="info-m" class="info-m-btn">
                 <i class="fa-solid fa-circle-info"></i>
               </label>
+              <!-- 모바일 전용 info 팝업 -->
               <div class="popup-m">
                 <p><mark>Page info, 가이드</mark></p>
-
                 <br />
-
                 <ul>
                   <li>다크모드 <b>가능</b></li>
                   <li>검색 사용 <b>불가능</b></li>
@@ -100,71 +122,76 @@
                   </li>
                 </ul>
               </div>
+              <!-- 모바일 음악창 버튼 -->
               <input type="checkbox" id="music-m" />
               <label for="music-m" class="music-m-btn"
                 ><i class="fa-solid fa-music"></i
               ></label>
+              <!-- 모바일 음악 팝업창 -->
               <div class="music-m-mp3">
                 <audio src="coffee-audio.mp3" controls="controls"></audio>
               </div>
-              <a href="#"><i class="fa-solid fa-moon"></i></a>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <!-- 모바일 다크모드 버튼 -->
+              <!-- <i class="fa-solid fa-moon"></i> -->
+              <!-- 모바일 검색 버튼 -->
+              <i
+                onclick="alert('사용 불가능')"
+                class="fa-solid fa-magnifying-glass"
+              ></i>
             </div>
           </div>
         </div>
       </header>
+
       <!-- 헤더 바로 밑 이미지 -->
       <div class="bcc-img"></div>
       <!-- aside랑 section 감싸는 main -->
       <main>
         <!-- 왼쪽 aside, 모바일+태블릿에서 없어질 예정 -->
         <aside>
-          <!-- <nav></nav> -->
-          <p>
-            <mark>aside</mark> Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Rerum laboriosam eligendi earum nulla nemo ad
-            dolorum quos, nisi assumenda maiores magnam! Nam cum quo delectus,
-            rem sed placeat assumenda! Aut. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Rerum laboriosam eligendi earum nulla
-            nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum quo
-            delectus, rem sed placeat assumenda! Aut. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Rerum laboriosam eligendi earum
-            nulla nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum
-            quo delectus, rem sed placeat assumenda! Aut. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Rerum laboriosam eligendi earum
-            nulla nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum
-            quo delectus, rem sed placeat assumenda! Aut. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Rerum laboriosam eligendi earum
-            nulla nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum
-            quo delectus, rem sed placeat assumenda! Aut. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Rerum laboriosam eligendi earum
-            nulla nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum
-            quo delectus, rem sed placeat assumenda! Aut. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Rerum laboriosam eligendi earum
-            nulla nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum
-            quo delectus, rem sed placeat assumenda! Aut. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Rerum laboriosam eligendi earum
-            nulla nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum
-            quo delectus, rem sed placeat assumenda! Aut. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Rerum laboriosam eligendi earum
-            nulla nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum
-            quo delectus, rem sed placeat assumenda! Aut. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Rerum laboriosam eligendi earum
-            nulla nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum
-            quo delectus, rem sed placeat assumenda! Aut. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Rerum laboriosam eligendi earum
-            nulla nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum
-            quo delectus, rem sed placeat assumenda! Aut. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Rerum laboriosam eligendi earum
-            nulla nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum
-            quo delectus, rem sed placeat assumenda! Aut. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Rerum laboriosam eligendi earum
-            nulla nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum
-            quo delectus, rem sed placeat assumenda! Aut. Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Rerum laboriosam eligendi earum
-            nulla nemo ad dolorum quos, nisi assumenda maiores magnam! Nam cum
-            quo delectus, rem sed placeat assumenda! Aut.
-          </p>
+          <ul class="nav">
+            <li></li>
+            <li>
+              <a href="#"><img src="pome.jpg" alt="포메라니안" /></a
+              ><span>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+              </span>
+            </li>
+            <li>
+              <a href="#"><img src="pome.jpg" alt="포메라니안" /></a
+              ><span>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+              </span>
+            </li>
+            <li>
+              <a href="#"><img src="pome.jpg" alt="포메라니안" /></a
+              ><span>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+              </span>
+            </li>
+            <li>
+              <a href="#"><img src="pome.jpg" alt="포메라니안" /></a
+              ><span>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+              </span>
+            </li>
+          </ul>
         </aside>
         <!-- 오른쪽 section -->
         <section>
@@ -272,7 +299,9 @@
       <footer>
         <div class="made-by">
           <span>by_seungryul &nbsp;_</span>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a target="_blank" href="https://github.com/seungryul22/web-front"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
       </footer>
     </div>
