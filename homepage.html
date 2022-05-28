@@ -22,7 +22,7 @@
     <script src="app.js"></script>
 
     <!-- 페이지 제목 -->
-    <title>201912034</title>
+    <title>201912034_김승률</title>
   </head>
   <body>
     <!-- 페이지 전체 감싸는 틀 제작 wrap -->
@@ -30,7 +30,7 @@
       <!-- 헤더 시작 -->
       <header>
         <!-- 로고 -->
-        <div class="logo"><a href="#">Furry Friends</a></div>
+        <div class="logo"><a href="#">아직 준비중...</a></div>
         <!-- 네비게이션 아이콘 모음 -->
         <div class="icons">
           <!-- 페이지 가이드 팝업 버튼 -->
@@ -45,6 +45,7 @@
             <ul>
               <li>검색 사용 <b>불가능</b></li>
               <li>배경음악 조절 <b>가능</b></li>
+              <li>세로길이가 너무 짧은 화면에서 사이드 메뉴 불가능</li>
               <br /><br />
               <li>
                 팝업 닫기 : 다시 <i class="fa-solid fa-circle-info"></i> 클릭
@@ -60,7 +61,10 @@
           ></label>
           <!-- 음악 컨트롤러 팝업창 -->
           <div class="music-mp3">
-            <audio src="coffee-audio.mp3" controls="controls"></audio>
+            <audio
+              src="image,audio/backgroundaudio.mp3"
+              controls="controls"
+            ></audio>
           </div>
           <!-- 다크모드 버튼 -->
           <!-- <i class="fa-solid fa-moon" onclick="night();"></i> -->
@@ -80,22 +84,22 @@
           <!-- 모바일 전용 사이드 네비 -->
           <div class="side-menu-list">
             <a href="#"
-              ><img src="pome.jpg" alt="포메라니안" /><span
+              ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
                 ># 포메라니안</span
               ></a
             >
             <a href="#"
-              ><img src="pome.jpg" alt="포메라니안" /><span
+              ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
                 ># 포메라니안</span
               ></a
             >
             <a href="#"
-              ><img src="pome.jpg" alt="포메라니안" /><span
+              ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
                 ># 포메라니안</span
               ></a
             >
             <a href="#"
-              ><img src="pome.jpg" alt="포메라니안" /><span
+              ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
                 ># 포메라니안</span
               ></a
             >
@@ -110,7 +114,10 @@
                 <p><mark>Page info, 가이드</mark></p>
                 <br />
                 <ul>
-                  <li>다크모드 <b>가능</b></li>
+                  <li>
+                    세로길이가 너무 짧은 화면에서 사이드 메뉴 <b>불가능</b>
+                  </li>
+                  <br />
                   <li>검색 사용 <b>불가능</b></li>
                   <li>배경음악 조절 <b>가능</b></li>
                   <br /><br />
@@ -129,15 +136,17 @@
               ></label>
               <!-- 모바일 음악 팝업창 -->
               <div class="music-m-mp3">
-                <audio src="coffee-audio.mp3" controls="controls"></audio>
+                <audio
+                  src="image,audio/backgroundaudio.mp3"
+                  controls="controls"
+                ></audio>
               </div>
               <!-- 모바일 다크모드 버튼 -->
               <!-- <i class="fa-solid fa-moon"></i> -->
               <!-- 모바일 검색 버튼 -->
-              <i
-                onclick="alert('사용 불가능')"
-                class="fa-solid fa-magnifying-glass"
-              ></i>
+              <a href="#"
+                ><i id="m-home" class="fa-solid fa-house-chimney"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -150,9 +159,11 @@
         <!-- 왼쪽 aside, 모바일+태블릿에서 없어질 예정 -->
         <aside>
           <ul class="nav">
-            <li></li>
             <li>
-              <a href="#"><img src="pome.jpg" alt="포메라니안" /></a
+              <a href="#"><i class="fa-solid fa-house-chimney"></i></a>
+            </li>
+            <li>
+              <a href="#"><img src="image,audio/pome.jpg" alt="포메라니안" /></a
               ><span>
                 <div class="hash"># 포메라니안</div>
                 <div class="hash"># 포메라니안</div>
@@ -162,7 +173,7 @@
               </span>
             </li>
             <li>
-              <a href="#"><img src="pome.jpg" alt="포메라니안" /></a
+              <a href="#"><img src="image,audio/pome.jpg" alt="포메라니안" /></a
               ><span>
                 <div class="hash"># 포메라니안</div>
                 <div class="hash"># 포메라니안</div>
@@ -172,7 +183,7 @@
               </span>
             </li>
             <li>
-              <a href="#"><img src="pome.jpg" alt="포메라니안" /></a
+              <a href="#"><img src="image,audio/pome.jpg" alt="포메라니안" /></a
               ><span>
                 <div class="hash"># 포메라니안</div>
                 <div class="hash"># 포메라니안</div>
@@ -182,7 +193,7 @@
               </span>
             </li>
             <li>
-              <a href="#"><img src="pome.jpg" alt="포메라니안" /></a
+              <a href="#"><img src="image,audio/pome.jpg" alt="포메라니안" /></a
               ><span>
                 <div class="hash"># 포메라니안</div>
                 <div class="hash"># 포메라니안</div>
@@ -239,66 +250,41 @@
             neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Doloribus quidem tenetur, quo
             exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
-            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
-            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
-            obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
-            nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Doloribus quidem
-            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
-            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
-            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Doloribus quidem tenetur, quo
+            unt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Doloribus quidem tenetur, quo
             exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
             exercitationem assumenda cum nesciunt itaque neque ullam temporibus
             reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
-            obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
-            nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Doloribus quidem
-            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
-            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
-            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Doloribus quidem tenetur, quo
-            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
-            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
+            obcaecati explicabo. Dolorum recusandaeunt itaque neque ullam
+            temporibus reiciendis fuga.Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Doloribus quidem tenetur, quo exercitationem fuga
+            magni ad obcaecati explicabo. Dolorum recusandae exercitationem
+            assumenda cum nesciunt itaque neque ullam temporibus reiciendis
+            fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloribus quidem tenetur, quo exercitationem fuga magni ad obcaecati
+            explicabo. Dolorum recusandaeunt itaque neque ullam temporibus
             reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
             obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
             nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
             dolor sit amet consectetur adipisicing elit. Doloribus quidem
             tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
-            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
-            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Doloribus quidem tenetur, quo
+            Dolorum recusandaeunt itaque neque ullam temporibus reiciendis
+            fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloribus quidem tenetur, quo exercitationem fuga magni ad obcaecati
+            explicabo. Dolorum recusandae exercitationem assumenda cum nesciunt
+            itaque neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Doloribus quidem tenetur, quo
             exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
             exercitationem assumenda cum nesciunt itaque neque ullam temporibus
-            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
-            obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
-            nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Doloribus quidem
-            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
-            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
-            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Doloribus quidem tenetur, quo
-            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
-            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
-            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
-            obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
-            nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Doloribus quidem
-            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
-            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
-            neque ullam temporibus reiciendis fuga.111
           </p>
         </section>
       </main>
       <!-- 푸터 -->
       <footer>
         <div class="made-by">
-          <span>by_seungryul &nbsp;_</span>
+          <span>my_first_web__by_seungryul &nbsp;_</span>
           <a target="_blank" href="https://github.com/seungryul22/web-front"
             ><i class="fa-brands fa-github"></i
           ></a>
