@@ -70,7 +70,9 @@
           <!-- <i class="fa-solid fa-moon" onclick="night();"></i> -->
           <!-- 검색 버튼 -->
           <i
-            onclick="alert('사용불가능')"
+            id="search_bar"
+            value="on"
+            onclick="searchBar()"
             class="fa-solid fa-magnifying-glass"
           ></i>
         </div>
@@ -98,11 +100,11 @@
                 ># 포메라니안</span
               ></a
             >
-            <a href="#"
+            <!-- <a href="#"
               ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
                 ># 포메라니안</span
               ></a
-            >
+            > -->
             <!-- 사이드 네비에 있는 원래 버튼들 -->
             <div class="side-icons">
               <input type="checkbox" id="info-m" />
@@ -117,6 +119,9 @@
                   <li>
                     세로길이가 너무 짧은 화면에서 사이드 메뉴 <b>불가능</b>
                   </li>
+                  <br />
+                  <li>모바일 전용 페이지에서는 검색버튼 <b>비활성화</b></li>
+
                   <br />
                   <li>검색 사용 <b>불가능</b></li>
                   <li>배경음악 조절 <b>가능</b></li>
@@ -192,7 +197,7 @@
                 <div class="hash"># 포메라니안</div>
               </span>
             </li>
-            <li>
+            <!-- <li>
               <a href="#"><img src="image,audio/pome.jpg" alt="포메라니안" /></a
               ><span>
                 <div class="hash"># 포메라니안</div>
@@ -201,18 +206,15 @@
                 <div class="hash"># 포메라니안</div>
                 <div class="hash"># 포메라니안</div>
               </span>
-            </li>
+            </li> -->
           </ul>
         </aside>
         <!-- 오른쪽 section -->
         <section>
           <p>
-            <mark>section</mark> Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Doloribus quidem tenetur, quo exercitationem fuga
-            magni ad obcaecati explicabo. Dolorum recusandae exercitationem
-            assumenda cum nesciunt itaque neque ullam temporibus reiciendis
-            fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Doloribus quidem tenetur, quo exercitationem fuga magni ad obcaecati
+            <mark>section</mark><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            quidem tenetur, quo exercitationem fuga magni ad obcaecati
             explicabo. Dolorum recusandae exercitationem assumenda cum nesciunt
             itaque neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Doloribus quidem tenetur, quo
@@ -250,13 +252,10 @@
             neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Doloribus quidem tenetur, quo
             exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
-            unt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Doloribus quidem tenetur, quo
-            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
             exercitationem assumenda cum nesciunt itaque neque ullam temporibus
             reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
-            obcaecati explicabo. Dolorum recusandaeunt itaque neque ullam
+            obcaecati explicabo. Dolorum recusandae unt itaque neque ullam
             temporibus reiciendis fuga.Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Doloribus quidem tenetur, quo exercitationem fuga
             magni ad obcaecati explicabo. Dolorum recusandae exercitationem
@@ -276,6 +275,13 @@
             explicabo. Dolorum recusandae exercitationem assumenda cum nesciunt
             itaque neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Doloribus quidem tenetur, quo
+            exercitationem fuga magni ad obcaecati explicabo. Dolorum
+            recusandaeunt itaque neque ullam temporibus reiciendis fuga.Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Doloribus quidem
+            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
+            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
+            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Doloribus quidem tenetur, quo
             exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
             exercitationem assumenda cum nesciunt itaque neque ullam temporibus
           </p>

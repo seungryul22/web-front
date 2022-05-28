@@ -483,3 +483,22 @@ footer{
         display: none;
     }
 }
+
+/* 검색 버튼 눌렀을 때 */
+.x{
+    width: 170px;
+    background-color: red;
+    float: right;
+    margin-left: 10px;
+    display: flex;
+}
+
+.x > input {
+    width: 140px;
+    display: flex;
+    align-items: center;
+}
+
+.x > input:last-child{
+    width:30px;
+}
