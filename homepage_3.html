@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 메타태그 모음 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <!-- 구글 노토샌즈 무료폰트 사용 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS 사용 -->
+    <link rel="stylesheet" href="homepage.css" media="screen" />
+
+    <!-- JavaScript 사용 -->
+    <script src="homepage.js"></script>
+
+    <!-- 페이지 제목 -->
+    <title>201912034_김승률</title>
+  </head>
+  <body>
+    <!-- 페이지 전체 감싸는 틀 제작 wrap -->
+    <div class="wrap">
+      <!-- 헤더 시작 -->
+      <header>
+        <!-- 로고 -->
+        <div class="logo"><a href="homepage.html">Furry animals</a></div>
+        <!-- 네비게이션 아이콘 모음 -->
+        <div class="icons">
+          <!-- 페이지 가이드 팝업 버튼 -->
+          <input type="checkbox" id="info" />
+          <label for="info" class="info-btn">
+            <i class="fa-solid fa-circle-info"></i>
+          </label>
+          <!-- 페이지 가이드 팝업창 -->
+          <div class="popup">
+            <p><mark>Page info, 가이드</mark></p>
+            <br />
+            <ul>
+              <li>검색 사용 <b>불가능</b></li>
+              <li>배경음악 조절 <b>가능</b></li>
+              <li>세로길이가 너무 짧은 화면에서 사이드 메뉴 불가능</li>
+              <br /><br />
+              <li>
+                팝업 닫기 : 다시 <i class="fa-solid fa-circle-info"></i> 클릭
+                <br />
+                음악창 닫기 : 다시 <i class="fa-solid fa-music"></i> 클릭
+              </li>
+              검색창 닫기 : 다시
+              <i class="fa-solid fa-magnifying-glass"></i
+              >클릭
+            </ul>
+          </div>
+          <!-- 음악 컨트롤러 버튼 -->
+          <input type="checkbox" id="music" />
+          <label for="music" class="music-btn"
+            ><i class="fa-solid fa-music"></i
+          ></label>
+          <!-- 음악 컨트롤러 팝업창 -->
+          <div class="music-mp3">
+            <audio
+              src="image,audio/backgroundaudio.mp3"
+              controls="controls"
+            ></audio>
+          </div>
+          <!-- 다크모드 버튼 -->
+          <!-- <i class="fa-solid fa-moon" onclick="night();"></i> -->
+          <!-- 검색 버튼 -->
+          <i
+            id="search_bar"
+            value="on"
+            onclick="searchBar()"
+            class="fa-solid fa-magnifying-glass"
+          ></i>
+        </div>
+        <!-- 모바일,태블릿 전용 아이콘, 네비 -->
+        <div class="mobile-icon">
+          <!-- 모바일 전용 네비 불러오는 햄버거 버튼 -->
+          <input type="checkbox" id="side-menu" />
+          <label for="side-menu" class="side-menu-btn"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+          <!-- 모바일 전용 사이드 네비 -->
+          <div class="side-menu-list">
+            <a href="homepage_1.html"
+              ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
+                ># 포메라니안</span
+              ></a
+            >
+            <a href="homepage_2.html"
+              ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
+                ># 포메라니안</span
+              ></a
+            >
+            <a href="homepage_3.html"
+              ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
+                ># 포메라니안</span
+              ></a
+            >
+            <!-- <a href="#"
+              ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
+                ># 포메라니안</span
+              ></a
+            > -->
+            <!-- 사이드 네비에 있는 원래 버튼들 -->
+            <div class="side-icons">
+              <input type="checkbox" id="info-m" />
+              <label for="info-m" class="info-m-btn">
+                <i class="fa-solid fa-circle-info"></i>
+              </label>
+              <!-- 모바일 전용 info 팝업 -->
+              <div class="popup-m">
+                <p><mark>Page info, 가이드</mark></p>
+                <br />
+                <ul>
+                  <li>
+                    세로길이가 너무 짧은 화면에서 사이드 메뉴 <b>불가능</b>
+                  </li>
+                  <br />
+                  <li>모바일 전용 페이지에서는 검색버튼 <b>비활성화</b></li>
+
+                  <br />
+                  <li>검색 사용 <b>불가능</b></li>
+                  <li>배경음악 조절 <b>가능</b></li>
+                  <br /><br />
+                  <li>
+                    팝업 닫기 : 다시 <i class="fa-solid fa-circle-info"></i>
+                    클릭
+                    <br />
+                    음악창 닫기 : 다시 <i class="fa-solid fa-music"></i> 클릭
+                  </li>
+                </ul>
+              </div>
+              <!-- 모바일 음악창 버튼 -->
+              <input type="checkbox" id="music-m" />
+              <label for="music-m" class="music-m-btn"
+                ><i class="fa-solid fa-music"></i
+              ></label>
+              <!-- 모바일 음악 팝업창 -->
+              <div class="music-m-mp3">
+                <audio
+                  src="image,audio/backgroundaudio.mp3"
+                  controls="controls"
+                ></audio>
+              </div>
+              <!-- 모바일 다크모드 버튼 -->
+              <!-- <i class="fa-solid fa-moon"></i> -->
+              <!-- 모바일 검색 버튼 -->
+              <a href="homepage.html"
+                ><i id="m-home" class="fa-solid fa-house-chimney"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- 헤더 바로 밑 이미지 -->
+      <div class="bcc-img"></div>
+      <!-- aside랑 section 감싸는 main -->
+      <main>
+        <!-- 왼쪽 aside, 모바일+태블릿에서 없어질 예정 -->
+        <aside>
+          <ul class="nav">
+            <li>
+              <a href="homepage.html"
+                ><i class="fa-solid fa-house-chimney"></i
+              ></a>
+            </li>
+            <li>
+              <a href="homepage_1.html"
+                ><img src="image,audio/pome.jpg" alt="포메라니안" /></a
+              ><span>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+              </span>
+            </li>
+            <li>
+              <a href="homepage_2.html"
+                ><img src="image,audio/pome.jpg" alt="포메라니안" /></a
+              ><span>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+              </span>
+            </li>
+            <li>
+              <a href="homepage_3.html"
+                ><img src="image,audio/pome.jpg" alt="포메라니안" /></a
+              ><span>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+              </span>
+            </li>
+            <!-- <li>
+              <a href="#"><img src="image,audio/pome.jpg" alt="포메라니안" /></a
+              ><span>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 포메라니안</div>
+              </span>
+            </li> -->
+          </ul>
+        </aside>
+        <!-- 오른쪽 section -->
+        <section>
+          <p>
+            <mark>section</mark><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            quidem tenetur, quo exercitationem fuga magni ad obcaecati
+            explicabo. Dolorum recusandae exercitationem assumenda cum nesciunt
+            itaque neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Doloribus quidem tenetur, quo
+            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
+            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
+            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
+            obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
+            nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Doloribus quidem
+            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
+            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
+            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Doloribus quidem tenetur, quo
+            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
+            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
+            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
+            obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
+            nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Doloribus quidem
+            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
+            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
+            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Doloribus quidem tenetur, quo
+            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
+            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
+            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
+            obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
+            nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Doloribus quidem
+            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
+            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
+            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Doloribus quidem tenetur, quo
+            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
+            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
+            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
+            obcaecati explicabo. Dolorum recusandae unt itaque neque ullam
+            temporibus reiciendis fuga.Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Doloribus quidem tenetur, quo exercitationem fuga
+            magni ad obcaecati explicabo. Dolorum recusandae exercitationem
+            assumenda cum nesciunt itaque neque ullam temporibus reiciendis
+            fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloribus quidem tenetur, quo exercitationem fuga magni ad obcaecati
+            explicabo. Dolorum recusandaeunt itaque neque ullam temporibus
+            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
+            obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
+            nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Doloribus quidem
+            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
+            Dolorum recusandaeunt itaque neque ullam temporibus reiciendis
+            fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloribus quidem tenetur, quo exercitationem fuga magni ad obcaecati
+            explicabo. Dolorum recusandae exercitationem assumenda cum nesciunt
+            itaque neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Doloribus quidem tenetur, quo
+            exercitationem fuga magni ad obcaecati explicabo. Dolorum
+            recusandaeunt itaque neque ullam temporibus reiciendis fuga.Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Doloribus quidem
+            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
+            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
+            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Doloribus quidem tenetur, quo
+            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
+            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
+          </p>
+        </section>
+      </main>
+      <!-- 푸터 -->
+      <footer>
+        <div class="made-by">
+          <span>my_first_web__by_seungryul &nbsp;_</span>
+          <a target="_blank" href="https://github.com/seungryul22/web-front"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+    <!-- 폰트 어썸 무료아이콘을 위한 Script코드 -->
+    <script
+      src="https://kit.fontawesome.com/18d9faa058.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

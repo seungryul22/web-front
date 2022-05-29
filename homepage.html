@@ -19,10 +19,10 @@
     <link rel="stylesheet" href="homepage.css" media="screen" />
 
     <!-- JavaScript 사용 -->
-    <script src="app.js"></script>
+    <script src="homepage.js"></script>
 
     <!-- 페이지 제목 -->
-    <title>201912034_김승률</title>
+    <title>201912034</title>
   </head>
   <body>
     <!-- 페이지 전체 감싸는 틀 제작 wrap -->
@@ -30,7 +30,7 @@
       <!-- 헤더 시작 -->
       <header>
         <!-- 로고 -->
-        <div class="logo"><a href="#">아직 준비중...</a></div>
+        <div class="logo"><a href="homepage.html">나만 강아지 없어</a></div>
         <!-- 네비게이션 아이콘 모음 -->
         <div class="icons">
           <!-- 페이지 가이드 팝업 버튼 -->
@@ -52,6 +52,9 @@
                 <br />
                 음악창 닫기 : 다시 <i class="fa-solid fa-music"></i> 클릭
               </li>
+              검색창 닫기 : 다시
+              <i class="fa-solid fa-magnifying-glass"></i
+              >클릭
             </ul>
           </div>
           <!-- 음악 컨트롤러 버튼 -->
@@ -85,17 +88,17 @@
           ></label>
           <!-- 모바일 전용 사이드 네비 -->
           <div class="side-menu-list">
-            <a href="#"
+            <a href="homepage_1.html"
               ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
                 ># 포메라니안</span
               ></a
             >
-            <a href="#"
+            <a href="homepage_2.html"
               ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
                 ># 포메라니안</span
               ></a
             >
-            <a href="#"
+            <a href="homepage_3.html"
               ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
                 ># 포메라니안</span
               ></a
@@ -149,7 +152,7 @@
               <!-- 모바일 다크모드 버튼 -->
               <!-- <i class="fa-solid fa-moon"></i> -->
               <!-- 모바일 검색 버튼 -->
-              <a href="#"
+              <a href="homepage.html"
                 ><i id="m-home" class="fa-solid fa-house-chimney"></i
               ></a>
             </div>
@@ -164,127 +167,110 @@
         <!-- 왼쪽 aside, 모바일+태블릿에서 없어질 예정 -->
         <aside>
           <ul class="nav">
-            <li>
-              <a href="#"><i class="fa-solid fa-house-chimney"></i></a>
-            </li>
-            <li>
-              <a href="#"><img src="image,audio/pome.jpg" alt="포메라니안" /></a
-              ><span>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-              </span>
-            </li>
-            <li>
-              <a href="#"><img src="image,audio/pome.jpg" alt="포메라니안" /></a
-              ><span>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-              </span>
-            </li>
-            <li>
-              <a href="#"><img src="image,audio/pome.jpg" alt="포메라니안" /></a
-              ><span>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-              </span>
-            </li>
             <!-- <li>
-              <a href="#"><img src="image,audio/pome.jpg" alt="포메라니안" /></a
+              <a onclick="mainpage()"
+                ><i class="fa-solid fa-house-chimney"></i
+              ></a>
+            </li> -->
+            <li>
+              <a><img src="image,audio/pome.jpg" alt="포메라니안" /></a
               ><span>
                 <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
-                <div class="hash"># 포메라니안</div>
+                <div class="hash"># 소형견</div>
+                <div class="hash"># 독일출신</div>
+                <div class="hash"># 털 잘빠짐</div>
+                <div class="hash"># 다리 약함</div>
               </span>
-            </li> -->
+            </li>
+            <li>
+              <a><img src="image,audio/shihtzu.jpg" alt="포메라니안" /></a
+              ><span>
+                <div class="hash"># 시츄</div>
+                <div class="hash"># 소형견</div>
+                <div class="hash"># 티베트 출신</div>
+                <div class="hash"># 왕실 출신</div>
+                <div class="hash"># 성격 좋은편</div>
+              </span>
+            </li>
+            <li>
+              <a><img src="image,audio/coton.jpg" alt="포메라니안" /></a
+              ><span>
+                <div class="hash"># 꼬똥드툴레아</div>
+                <div class="hash"># 소형,중형견</div>
+                <div class="hash"># 마다가스카르</div>
+                <div class="hash"># 냄새 안남</div>
+                <div class="hash"># 성격 좋은편</div>
+              </span>
+            </li>
+            <li>
+              <a><img src="image,audio/border.jpg" alt="포메라니안" /></a
+              ><span>
+                <div class="hash"># 보더콜리</div>
+                <div class="hash"># 대형견</div>
+                <div class="hash"># 스코틀랜드</div>
+                <div class="hash"># 지능 높음</div>
+                <div class="hash"># 양치기 개</div>
+              </span>
+            </li>
           </ul>
         </aside>
         <!-- 오른쪽 section -->
         <section>
-          <p>
-            <mark>section</mark><br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            quidem tenetur, quo exercitationem fuga magni ad obcaecati
-            explicabo. Dolorum recusandae exercitationem assumenda cum nesciunt
-            itaque neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Doloribus quidem tenetur, quo
-            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
-            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
-            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
-            obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
-            nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Doloribus quidem
-            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
-            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
-            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Doloribus quidem tenetur, quo
-            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
-            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
-            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
-            obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
-            nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Doloribus quidem
-            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
-            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
-            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Doloribus quidem tenetur, quo
-            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
-            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
-            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
-            obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
-            nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Doloribus quidem
-            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
-            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
-            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Doloribus quidem tenetur, quo
-            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
-            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
-            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
-            obcaecati explicabo. Dolorum recusandae unt itaque neque ullam
-            temporibus reiciendis fuga.Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Doloribus quidem tenetur, quo exercitationem fuga
-            magni ad obcaecati explicabo. Dolorum recusandae exercitationem
-            assumenda cum nesciunt itaque neque ullam temporibus reiciendis
-            fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Doloribus quidem tenetur, quo exercitationem fuga magni ad obcaecati
-            explicabo. Dolorum recusandaeunt itaque neque ullam temporibus
-            reiciendis fuga.Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Doloribus quidem tenetur, quo exercitationem fuga magni ad
-            obcaecati explicabo. Dolorum recusandae exercitationem assumenda cum
-            nesciunt itaque neque ullam temporibus reiciendis fuga.Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Doloribus quidem
-            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
-            Dolorum recusandaeunt itaque neque ullam temporibus reiciendis
-            fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Doloribus quidem tenetur, quo exercitationem fuga magni ad obcaecati
-            explicabo. Dolorum recusandae exercitationem assumenda cum nesciunt
-            itaque neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Doloribus quidem tenetur, quo
-            exercitationem fuga magni ad obcaecati explicabo. Dolorum
-            recusandaeunt itaque neque ullam temporibus reiciendis fuga.Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Doloribus quidem
-            tenetur, quo exercitationem fuga magni ad obcaecati explicabo.
-            Dolorum recusandae exercitationem assumenda cum nesciunt itaque
-            neque ullam temporibus reiciendis fuga.Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Doloribus quidem tenetur, quo
-            exercitationem fuga magni ad obcaecati explicabo. Dolorum recusandae
-            exercitationem assumenda cum nesciunt itaque neque ullam temporibus
-          </p>
+          <div class="main_article">
+            <h1><mark>뭐하는 페이지 인가요 ??</mark></h1>
+            <br />
+            <br />
+            <h3>주위를 둘러보면 항상 나만 없는 강아지....</h3>
+            <br />
+            <br />
+            <h3>
+              그래서 제가 나중에 독립하고 경제적 여유가 되면 꼭 키우고 싶은
+              강아지들을 소개하는 사이트를 만들어 봤습니다!
+            </h3>
+
+            <br />
+            <h3>
+              개인적으로 날렵한 친구들 보다 털복숭이 친구들을 좋아해서 털 많은
+              강아지들만 소개합니다...
+            </h3>
+            <br />
+            <h3>즐겁게 구경해주세요!!</h3>
+            <br />
+            <h3>(강아지 아이콘을 클릭하세요)</h3>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <h1><mark>후기, 추가 설명</mark></h1>
+            <br />
+            <br />
+
+            <h3>
+              페이지 레이아웃 짜기, 안에 넣을 내용 생각하는게 가장 어려웠던거
+              같습니다..
+            </h3>
+            <br />
+            <h3>
+              그래도 코드 한줄입력하고 새로고침 할 때마다 바로바로 웹페이지에
+              결과물이 나오는게 재밌었습니다.
+            </h3>
+            <br />
+            <br />
+            <h3>
+              사용된 이미지,오디오파일 : pixabay 무료 이미지,오디오파일 사용
+            </h3>
+            <br />
+            <h3>사용된 아이콘 : fontawesome 무료 아이콘 사용</h3>
+          </div>
         </section>
       </main>
       <!-- 푸터 -->
