@@ -16,8 +16,6 @@
 .wrap {
     width: 100%;
     overflow: hidden;
-    /* height: 1600px; */
-    /* background-color: #e6e6e6; */
 }
 
 /* 헤더시작 */
@@ -25,7 +23,6 @@ header {
     width: 100%;
     height: 70px;
     position: fixed;
-    /* position: relative; */
     border-bottom: 1px solid black;
     background-color: white;
 }
@@ -139,7 +136,7 @@ header {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-image: url("image,audio/story.png");
+    background-image: url("story.png");
     background-size: cover;
     margin: 10px 15px 10px 7px;
     padding: 5px;
@@ -268,8 +265,7 @@ header {
 
 /* 헤더 밑 이미지 */
 .bcc-img{
-    background-image: url("image,audio/dog-a.jpg");
-    /* background-color: red; */
+    background-image: url("backgroundimage.jpg");
     background-repeat: no-repeat;
     background-size: 100% 650px;
     height: 650px;
@@ -287,7 +283,6 @@ main{
 /* aside(왼쪽) */
 aside {
     width: 380px;
-    /* background-color: pink; */
     float: left;
     text-align: justify;
     margin-top: -30px;
@@ -301,30 +296,16 @@ aside {
     align-items: center; 
 }
 
-/* .nav > li:first-child{
-    font-size: 150px;
-} */
-
 .nav >li:first-child{
     margin-top: 50px;
 }
-
-/* .nav > li > a >i:first-child{
-    margin-left: 24px;
-    cursor: pointer;
-    text-shadow: 5px 5px 5px grey;
-} */
-
-/* .nav > li > a > i:hover{
-    color: grey;
-} */
 
 .nav > li > a > img{
     width: 200px;
     height: 200px;
     padding: 5px;
     border-radius: 50%;
-    background-image: url("image,audio/story.png");
+    background-image: url("story.png");
     background-size: cover;
     margin-right: 20px;
 }
@@ -332,6 +313,7 @@ aside {
 .nav > li > a >img:hover{
     border: 5px dotted black;
     background-image: none;
+    cursor: pointer;
 }
 
 .nav > li > span{
@@ -345,14 +327,10 @@ aside {
 /* section(오른쪽) ,모바일+태블릿에서 메인 */
 section {
     width: calc(100% - 400px);
-    /* background-color: whitesmoke; */
     float: right;
     text-align: justify;
     margin-top: 20px;
-    /* overflow-y: scroll; */
 }
-
-section {}
 
 .main_article {
     margin-top: 30px;
@@ -363,7 +341,6 @@ section {}
 /* 푸터 */
 footer{
     width: 100%;
-    /* background-color: #e6e6e6; */
     overflow: hidden;
     margin-top: 20px;
     border-top: 1px solid rgba(128, 128, 128, 0.3);
@@ -397,10 +374,6 @@ footer{
 
 /* 모바일 */
 @media screen and (max-width:520px) {
-    /* header {
-        background-color: white;
-    } */
-
     .icons{
         display: none;
     }
@@ -418,7 +391,7 @@ footer{
 
    .bcc-img{
     background-image: none;
-    background-image: url("image,audio/dog-a.jpg");
+    background-image: url("backgroundimage.jpg");
     background-size: 100% 250px;
     height: 250px;
  }
@@ -439,10 +412,6 @@ footer{
 
 /* 태블릿 */
 @media screen and (min-width:521px) and (max-width:1200px) {
-    /* header {
-        background-color: white;
-    } */
-
     .icons{
         display: none;
     }
@@ -459,7 +428,7 @@ footer{
    }
 
     .bcc-img{
-        background-image: url("image,audio/dog-a.jpg");
+        background-image: url("backgroundimage.jpg");
         background-repeat: no-repeat;
         background-size: 100% 400px;
         height: 400px;
@@ -470,23 +439,16 @@ footer{
     }
 
     aside{
-        /* float: none; */
         display: none;
-        /* width: 100%; */
     }
 
     section{
-        /* float: left; */
         width: 100%;
     }
 }
 
 /* pc */
 @media screen and (min-width:1201px){
-    /* header {
-        background-color: white;
-    } */
-
     .mobile-icon{
         display: none;
     }
@@ -502,4 +464,9 @@ footer{
 
 .x > input {
     width: 140px;
+}
+
+.dog_img {
+    width: 90%;
+    height: auto;
 }

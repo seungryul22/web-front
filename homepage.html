@@ -65,12 +65,11 @@
           <!-- 음악 컨트롤러 팝업창 -->
           <div class="music-mp3">
             <audio
-              src="image,audio/backgroundaudio.mp3"
+              src="backgroundaudio.mp3"
               controls="controls"
+              autoplay
             ></audio>
           </div>
-          <!-- 다크모드 버튼 -->
-          <!-- <i class="fa-solid fa-moon" onclick="night();"></i> -->
           <!-- 검색 버튼 -->
           <i
             id="search_bar"
@@ -88,26 +87,22 @@
           ></label>
           <!-- 모바일 전용 사이드 네비 -->
           <div class="side-menu-list">
-            <a href="homepage_1.html"
-              ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
+            <a onclick="pome()"
+              ><img src="pome.jpg" alt="포메라니안" /><span
                 ># 포메라니안</span
               ></a
             >
-            <a href="homepage_2.html"
-              ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
-                ># 포메라니안</span
+            <a onclick="sitchu()"
+              ><img src="shihtzu.jpg" alt="시츄" /><span># 시츄</span></a
+            >
+            <a onclick="coton()"
+              ><img src="coton.jpg" alt="꼬튼 드 툴레아" /><span
+                ># 꼬뚱 드 툴레아</span
               ></a
             >
-            <a href="homepage_3.html"
-              ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
-                ># 포메라니안</span
-              ></a
+            <a onclick="border()"
+              ><img src="border.jpg" alt="보더콜리" /><span># 보더콜리</span></a
             >
-            <!-- <a href="#"
-              ><img src="image,audio/pome.jpg" alt="포메라니안" /><span
-                ># 포메라니안</span
-              ></a
-            > -->
             <!-- 사이드 네비에 있는 원래 버튼들 -->
             <div class="side-icons">
               <input type="checkbox" id="info-m" />
@@ -144,14 +139,9 @@
               ></label>
               <!-- 모바일 음악 팝업창 -->
               <div class="music-m-mp3">
-                <audio
-                  src="image,audio/backgroundaudio.mp3"
-                  controls="controls"
-                ></audio>
+                <audio src="backgroundaudio.mp3" controls="controls"></audio>
               </div>
-              <!-- 모바일 다크모드 버튼 -->
-              <!-- <i class="fa-solid fa-moon"></i> -->
-              <!-- 모바일 검색 버튼 -->
+              <!-- 모바일 홈 버튼 -->
               <a href="homepage.html"
                 ><i id="m-home" class="fa-solid fa-house-chimney"></i
               ></a>
@@ -167,13 +157,8 @@
         <!-- 왼쪽 aside, 모바일+태블릿에서 없어질 예정 -->
         <aside>
           <ul class="nav">
-            <!-- <li>
-              <a onclick="mainpage()"
-                ><i class="fa-solid fa-house-chimney"></i
-              ></a>
-            </li> -->
             <li>
-              <a><img src="image,audio/pome.jpg" alt="포메라니안" /></a
+              <a onclick="pome()"><img src="pome.jpg" alt="포메라니안" /></a
               ><span>
                 <div class="hash"># 포메라니안</div>
                 <div class="hash"># 소형견</div>
@@ -183,7 +168,7 @@
               </span>
             </li>
             <li>
-              <a><img src="image,audio/shihtzu.jpg" alt="포메라니안" /></a
+              <a onclick="sitchu()"><img src="shihtzu.jpg" alt="시츄" /></a
               ><span>
                 <div class="hash"># 시츄</div>
                 <div class="hash"># 소형견</div>
@@ -193,7 +178,8 @@
               </span>
             </li>
             <li>
-              <a><img src="image,audio/coton.jpg" alt="포메라니안" /></a
+              <a onclick="coton()"
+                ><img src="coton.jpg" alt="코튼 드 툴레아" /></a
               ><span>
                 <div class="hash"># 꼬똥드툴레아</div>
                 <div class="hash"># 소형,중형견</div>
@@ -203,7 +189,7 @@
               </span>
             </li>
             <li>
-              <a><img src="image,audio/border.jpg" alt="포메라니안" /></a
+              <a onclick="border()"><img src="border.jpg" alt="보더콜리" /></a
               ><span>
                 <div class="hash"># 보더콜리</div>
                 <div class="hash"># 대형견</div>
